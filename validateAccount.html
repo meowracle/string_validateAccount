@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validateAccount</title>
+</head>
+<body>
+<script>
+    function isValidAcount(str) {
+        regexp = /^[_a-z0-9]{6,}$/;
+        if (regexp.test(str)) {
+            alert("tai khoan hop le");
+        } else {
+            alert("tai khoan khong hop le");
+        }
+    }
+    while (true) {
+        var test = prompt("moi nhap vao tai khoan")
+        isValidAcount(test);
+    }
+</script>
+</body>
+</html>
